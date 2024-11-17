@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TWN Career Quiz</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #2c3e50;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar nav ul li {
+      margin: 0 10px;
+    }
+
+    .navbar nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .navbar nav ul li a:hover {
+      background: #34495e;
+    }
+
+    .intro {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+
+    .intro .content {
+      max-width: 50%;
+    }
+
+    .intro h1 {
+      font-size: 36px;
+      color: #34495e;
+      padding-left: 15%;
+    }
+
+    .intro h1 span {
+      color: #e74c3c;
+    }
+
+    .intro p {
+      font-size: 18px;
+      margin: 10px 0;
+      padding-left: 15%;
+    }
+
+    .intro .boy {
+      width: 60%; 
+      max-width: 400px; 
+      height: 400px; 
+      margin-left: 20px; 
+      object-fit: contain;  
+    }
+
+    .gallery {
+      padding: 20px;
+      text-align: center;
+      background: #ecf0f1;
+    }
+
+    .gallery h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #34495e;
+    }
+
+    .image-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .image-box {
+      width: 200px;
+      height: 200px; /* Set a fixed height for the image box */
+      border: 2px solid #34495e;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* Ensure the full image is visible while maintaining aspect ratio */
+      display: block;
+    }
+
+    .image-box p {
+      margin: 0;
+      padding: 10px;
+      background: #34495e;
+      color: white;
+      font-size: 16px;
+    }
+
+    .image-box:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #2c3e50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">TWN Career Quiz</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Quiz</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="content">
+        <h1>Welcome to <span>TWN Career Quiz</span></h1>
+        <p>Discover your ideal career path with our fun and interactive quiz!</p>
+      </div>
+      <img src="Images/boy.png" alt="Boy standing" class="boy">
+    </section>
+
+    <section class="gallery">
+      <h2>Explore Career Paths</h2>
+      <div class="image-boxes">
+        <div class="image-box"><img src="Images/Docker.png" alt="Career 1"><p>Career 1</p></div>
+        <div class="image-box"><img src="Images/Kubernetes.png" alt="Career 2"><p>Career 2</p></div>
+        <div class="image-box"><img src="Images/Gitlab.png" alt="Career 3"><p>Career 3</p></div>
+        <div class="image-box"><img src="Images/aws2.jpg" alt="Career 4"><p>Career 4</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 TWN Career Quiz. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
